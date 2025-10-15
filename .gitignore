@@ -1,0 +1,276 @@
+# ============================================
+# ROOT PROJECT GITIGNORE
+# ============================================
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# NODE.JS / TYPESCRIPT (coordination-server & website)
+# ============================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# DATABASE (coordination-server)
+# ============================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+prisma/dev.db
+prisma/dev.db-journal
+
+# PostgreSQL
+*.dump
+*.sql
+
+# Prisma
+prisma/migrations/**/migration.sql
+.env.example
+
+# ============================================
+# JAVA / MAVEN (cli)
+# ============================================
+
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.externalToolBuilders/
+*.launch
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+.apt_generated/
+.apt_generated_test/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code Java
+.classpath
+.factorypath
+.project
+.settings/
+
+# ============================================
+# APPLICATION SPECIFIC
+# ============================================
+
+# WireGuard keys (NEVER commit private keys!)
+*.key
+*.conf
+private.key
+public.key
+keys/
+
+# Config files with secrets
+config.json
+secrets.json
+credentials.json
+
+# User data
+.myvpn/
+.meshlink/
+.netweave/
+user.txt
+device.txt
+
+# SSL Certificates
+*.pem
+*.crt
+*.key
+*.csr
+*.p12
+*.pfx
+certs/
+
+# Temp files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# ============================================
+# DOCKER
+# ============================================
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# ============================================
+# TERRAFORM / INFRASTRUCTURE
+# ============================================
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+
+# ============================================
+# DOCUMENTATION
+# ============================================
+
+# Don't ignore these (keep them)
+!README.md
+!LICENSE
+!CONTRIBUTING.md
+!docs/
+
+# But ignore generated docs
+site/
+_site/
+
+# ============================================
+# TESTING & CI/CD
+# ============================================
+
+# Test reports
+test-results/
+junit.xml
+coverage.xml
+
+# ============================================
+# MISC
+# ============================================
+
+# Archive files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Lock files (optional - some teams commit these)
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
